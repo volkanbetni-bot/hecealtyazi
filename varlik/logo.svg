@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 20 652 236" width="1304" height="472">
+  <title>Hece</title>
+  <path d="M20 40 V200 M20 150 a50 50 0 0 1 100 0 V200" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><path d="M175 150 H275 A50 50 0 1 0 260.4 185.4" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="324" y="62" width="300" height="176" rx="44" fill="#7C5CFF"/>
+  <path d="M450.4 114.6 A50 50 0 1 0 450.4 185.4" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><path d="M495 150 H595 A50 50 0 1 0 580.4 185.4" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

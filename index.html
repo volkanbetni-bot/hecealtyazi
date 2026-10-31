@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hece · Premiere için Türkçe altyazı</title>
+<meta name="description" content="Hece, Premiere Pro'da konuşmayı saniyeler içinde Türkçe altyazıya çevirir ve viral stillerle videona yerleştirir. Tek seferlik ödeme, abonelik yok." />
+<meta property="og:title" content="Hece · Premiere için Türkçe altyazı" />
+<meta property="og:description" content="Konuşmayı saniyeler içinde Türkçe altyazıya çevir, 37 viral stille videona yerleştir. Tek seferlik ödeme." />
+<meta property="og:image" content="https://hecealtyazi.com/varlik/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://hecealtyazi.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://hecealtyazi.com/" />
+<link rel="apple-touch-icon" href="varlik/ikon-512.png" />
+<meta name="theme-color" content="#0f0f12" />
+<link rel="icon" type="image/png" sizes="32x32" href="varlik/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="varlik/favicon-64.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --mor: #7c5cff; --mor-acik: #a593ff; --mor-koyu: #1d1640;
+    --zemin: #0f0f12; --zemin2: #16161b; --kart: #1c1c23; --cizgi: #2b2b35;
+    --yazi: #f3f2f7; --soluk: #a6a4b5; --silik: #6f6d80;
+    --sari: #ffd60a; --yesil: #3ee08f;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--zemin); color: var(--yazi); font-family: "Poppins", system-ui, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  .kap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* üst menü */
+  .ust { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); background: rgba(15, 15, 18, 0.78); border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+  .ust .kap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .ust img { height: 28px; display: block; }
+  .ust nav { display: flex; gap: 22px; align-items: center; font-size: 14px; color: var(--soluk); }
+  .ust nav a { text-decoration: none; }
+  .ust nav a:hover { color: var(--yazi); }
+  .dugme { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; padding: 13px 22px; font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer; border: 0; font-family: inherit; transition: transform 0.15s, box-shadow 0.15s; }
+  .dugme.ana { background: var(--mor); color: #fff; box-shadow: 0 8px 30px rgba(124, 92, 255, 0.35); }
+  .dugme.ana:hover { transform: translateY(-1px); box-shadow: 0 12px 36px rgba(124, 92, 255, 0.5); }
+  .dugme.ikincil { background: transparent; color: var(--yazi); border: 1px solid var(--cizgi); }
+  .dugme.kucuk { padding: 9px 16px; font-size: 13px; border-radius: 10px; }
+  @media (max-width: 720px) { .ust nav .gizle { display: none; } }
+
+  /* kahraman */
+  .kahraman { position: relative; overflow: hidden; padding: 72px 0 56px; }
+  .kahraman::before { content: ""; position: absolute; inset: -30% -10% auto; height: 620px; background: radial-gradient(closest-side, rgba(124, 92, 255, 0.28), transparent 70%); pointer-events: none; }
+  .kahraman .kap { position: relative; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .etiket { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; color: var(--mor-acik); background: rgba(124, 92, 255, 0.12); border: 1px solid rgba(124, 92, 255, 0.3); padding: 6px 12px; border-radius: 999px; font-weight: 600; }
+  h1 { font-size: clamp(36px, 5.4vw, 60px); line-height: 1.04; letter-spacing: -0.03em; margin: 18px 0 18px; font-weight: 800; }
+  h1 em { font-family: "Instrument Serif", serif; font-weight: 400; font-style: italic; color: var(--mor-acik); letter-spacing: -0.01em; }
+  .alt-baslik { font-size: 18px; color: var(--soluk); max-width: 540px; margin: 0 0 28px; }
+  .cta-satir { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .fiyat-mini { font-size: 14px; color: var(--soluk); margin-top: 16px; }
+  .fiyat-mini b { color: var(--yazi); }
+  .fiyat-mini s { color: var(--silik); }
+  .guven { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 26px; font-size: 13px; color: var(--soluk); }
+  .guven span::before { content: "✓"; color: var(--yesil); font-weight: 800; margin-right: 6px; }
+
+  /* telefon demosu */
+  .telefon-kap { display: flex; justify-content: center; }
+  .telefon { position: relative; width: 300px; aspect-ratio: 9 / 19.5; border-radius: 44px; background: #000; padding: 10px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08); }
+  .ekran { position: relative; width: 100%; height: 100%; border-radius: 35px; overflow: hidden; background: radial-gradient(120% 70% at 50% 18%, #6d5a86 0%, #3a2f52 38%, #191427 75%); }
+  /* sahne: arkada bokeh ışıklar, önde bulanık siluet (gerçek çekim yerine; altyazı yüze değil göğse gelir) */
+  .bokeh { position: absolute; border-radius: 50%; filter: blur(14px); opacity: 0.55; }
+  .kisi { position: absolute; left: 50%; bottom: -4%; width: 82%; aspect-ratio: 0.7; transform: translateX(-50%); filter: blur(3px); }
+  .kisi .bas { position: absolute; left: 50%; top: 4%; width: 40%; aspect-ratio: 0.82; transform: translateX(-50%); border-radius: 46% 46% 44% 44%; background: radial-gradient(70% 60% at 45% 35%, #3c3350, #17131f); }
+  .kisi .govde { position: absolute; left: 0; right: 0; bottom: 0; height: 60%; border-radius: 46% 46% 0 0; background: linear-gradient(170deg, #2b2540, #120f19); }
+  .rec { position: absolute; top: 16px; left: 18px; font-size: 11px; color: #fff; opacity: 0.85; display: flex; gap: 6px; align-items: center; font-weight: 600; }
+  .rec::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #ff4d4d; }
+  .stil-adi { position: absolute; top: 14px; right: 16px; font-size: 11px; font-weight: 700; color: #fff; background: rgba(124, 92, 255, 0.85); padding: 3px 9px; border-radius: 999px; }
+  .altyazi { position: absolute; left: 8%; right: 8%; top: 64%; text-align: center; }
+  .k { display: inline-block; margin: 0 0.12em; transition: transform 0.18s, color 0.12s, background 0.12s, opacity 0.2s; }
+  /* demo stilleri */
+  .s-patron { font-family: "Montserrat", sans-serif; font-weight: 900; font-size: 25px; text-transform: uppercase; color: #fff; text-shadow: 0 3px 0 #000, 0 0 3px #000, 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; }
+  .s-patron .aktif { color: #f7c204; transform: scale(1.12); }
+  .s-kapsul { font-weight: 800; font-size: 23px; color: #fff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+  .s-kapsul .aktif { background: var(--mor); border-radius: 10px; padding: 0 8px; }
+  .s-editor { font-weight: 800; font-size: 17px; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7); line-height: 1; }
+  .s-editor .anahtar { display: block; font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; font-size: 44px; color: var(--sari); margin-top: 2px; }
+  .s-editor .k { opacity: 0.15; }
+  .s-editor .k.gorundu { opacity: 1; }
+  .soluk { opacity: 0.18; }
+
+  /* bölümler */
+  section { padding: 76px 0; }
+  .bolum-baslik { text-align: center; max-width: 700px; margin: 0 auto 44px; }
+  .bolum-baslik .ust-etiket { color: var(--mor-acik); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
+  h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.1; letter-spacing: -0.02em; margin: 10px 0 12px; font-weight: 800; }
+  h2 em { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; color: var(--mor-acik); }
+  .bolum-baslik p { color: var(--soluk); margin: 0; font-size: 17px; }
+
+  .adimlar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .adim { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 20px; padding: 26px; }
+  .adim .no { width: 34px; height: 34px; border-radius: 10px; background: var(--mor-koyu); color: var(--mor-acik); display: flex; align-items: center; justify-content: center; font-weight: 800; }
+  .adim h3 { margin: 16px 0 8px; font-size: 19px; }
+  .adim p { margin: 0; color: var(--soluk); font-size: 15px; }
+
+  /* tanıtım videosu: solda dikey video, sağda adımlar */
+  .izle { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: center; }
+  .izle .adimlar { grid-template-columns: 1fr; }
+  .video-kap { position: relative; width: 100%; max-width: 340px; aspect-ratio: 9 / 16; margin: 0 auto; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08), 0 0 60px rgba(124, 92, 255, 0.18); }
+  .video-kap video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .oynat { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; border: 0; cursor: pointer; font-family: inherit; color: #fff; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.45)); }
+  .oynat[hidden] { display: none; }
+  .oynat .daire { width: 76px; height: 76px; border-radius: 50%; background: var(--mor); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(124, 92, 255, 0.6); transition: transform 0.15s; }
+  .oynat:hover .daire { transform: scale(1.07); }
+  .oynat .daire::before { content: ""; margin-left: 6px; border-left: 24px solid #fff; border-top: 15px solid transparent; border-bottom: 15px solid transparent; }
+  .oynat .yazi { font-weight: 700; font-size: 14px; background: rgba(0, 0, 0, 0.55); padding: 6px 12px; border-radius: 999px; }
+
+  .ozellikler { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .oz { background: var(--zemin2); border: 1px solid var(--cizgi); border-radius: 18px; padding: 22px; }
+  .oz .ikon { font-size: 22px; }
+  .oz h3 { font-size: 16px; margin: 10px 0 6px; }
+  .oz p { margin: 0; color: var(--soluk); font-size: 14px; }
+
+  /* stil galerisi */
+  .galeri { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .g { background: linear-gradient(160deg, #4a4f5f, #2d2f3c); border-radius: 16px; height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid var(--cizgi); }
+  .g .ad { position: absolute; left: 10px; bottom: 8px; font-size: 11px; color: rgba(255, 255, 255, 0.75); font-weight: 600; }
+  .g .ornek { text-align: center; padding: 0 10px; }
+  .g-patron { font-family: "Montserrat"; font-weight: 900; font-size: 19px; color: #fff; text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; }
+  .g-patron b { color: #f7c204; }
+  .g-sov { font-family: "Montserrat"; font-weight: 900; font-style: italic; font-size: 24px; color: var(--sari); transform: rotate(-4deg); text-shadow: 3px 3px 0 #000, -2px -2px 0 #000; }
+  .g-kapsul { font-weight: 800; font-size: 19px; color: #fff; }
+  .g-kapsul b { background: var(--mor); padding: 0 7px; border-radius: 8px; }
+  .g-editor { font-weight: 800; font-size: 13px; color: #fff; line-height: 1.05; }
+  .g-editor i { display: block; font-family: "Instrument Serif"; font-weight: 400; font-size: 34px; color: var(--sari); }
+  .g-dergi { color: #ff4d4d; line-height: 1; }
+  .g-dergi i { font-family: "Instrument Serif"; font-size: 18px; display: block; }
+  .g-dergi b { font-family: Georgia, serif; font-weight: 900; font-size: 26px; letter-spacing: 0.02em; }
+  .g-isik { font-weight: 800; font-size: 13px; color: #fff; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); }
+  .g-isik b { display: block; font-size: 24px; color: var(--yesil); text-shadow: 0 0 10px var(--yesil), 0 0 22px var(--yesil); }
+  .g-gradyan { font-family: "Montserrat"; font-weight: 900; font-size: 21px; background: linear-gradient(90deg, #ef4444, #ec4899, #8b5cf6, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .g-cember { font-weight: 800; font-size: 18px; color: #fff; }
+  .g-cember b { color: var(--yesil); border: 2px solid var(--yesil); border-radius: 50%; padding: 2px 8px; }
+  .galeri-not { text-align: center; color: var(--silik); font-size: 14px; margin-top: 18px; }
+
+  /* özel bölüm: kanca, soru, ses */
+  .ikili { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .vitrin { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 20px; padding: 22px; }
+  .vitrin .sahne { height: 150px; border-radius: 14px; background: linear-gradient(160deg, #3d3552, #1e1a2b); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; }
+  .vitrin h3 { margin: 0 0 6px; font-size: 17px; }
+  .vitrin p { margin: 0; color: var(--soluk); font-size: 14px; }
+  .manset { background: #fff; color: #000; font-family: "Montserrat"; font-weight: 900; font-size: 20px; line-height: 1.05; padding: 8px 12px; transform: rotate(-2deg); text-align: center; }
+  .manset b { color: #e11d48; }
+  .soru-kart { background: #fff; color: #1a1a1a; border-radius: 10px; padding: 10px 14px; font-weight: 700; font-size: 14px; position: relative; max-width: 80%; }
+  .soru-kart::before { content: "SORU"; position: absolute; top: -12px; left: 0; background: var(--sari); color: #111; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 4px; }
+  .dalga { display: flex; gap: 4px; align-items: center; height: 60px; }
+  .dalga i { width: 6px; border-radius: 3px; background: var(--mor-acik); animation: dalga 1.1s ease-in-out infinite; }
+  @keyframes dalga { 0%, 100% { height: 14px; } 50% { height: 54px; } }
+
+  /* fiyat */
+  .fiyat-kutu { max-width: 520px; margin: 0 auto; background: linear-gradient(180deg, #221b45, #17151f); border: 1px solid rgba(124, 92, 255, 0.45); border-radius: 26px; padding: 34px; text-align: center; box-shadow: 0 30px 80px rgba(124, 92, 255, 0.18); }
+  .rozet { display: inline-block; background: var(--mor); color: #fff; font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 999px; }
+  .tutar { font-size: 62px; font-weight: 800; letter-spacing: -0.03em; margin: 14px 0 0; line-height: 1; }
+  .tutar small { font-size: 22px; font-weight: 700; margin-left: 4px; }
+  .eski { color: var(--soluk); margin: 10px 0 0; font-size: 15px; }
+  .eski s { color: var(--silik); }
+  .tek { color: var(--mor-acik); font-weight: 600; margin: 6px 0 24px; font-size: 15px; }
+  .liste { text-align: left; list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 10px; font-size: 15px; }
+  .liste li::before { content: "✓"; color: var(--yesil); font-weight: 800; margin-right: 10px; }
+  .fiyat-kutu .dugme { width: 100%; }
+  .kucuk-not { font-size: 12px; color: var(--silik); margin-top: 14px; }
+  .odeme-not { font-size: 13px; color: var(--soluk); margin: 12px 0 0; }
+  .platform-dugmeler { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .fiyat-kutu .platform-dugmeler .dugme { width: auto; padding-left: 10px; padding-right: 10px; }
+
+  /* abonelik kıyası ve satın alma sonrası adımlar */
+  .kiyas { max-width: 520px; margin: 0 auto 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .kiyas-kart { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 16px; padding: 16px; text-align: center; }
+  .kiyas-kart.hece { border-color: rgba(124, 92, 255, 0.55); background: rgba(124, 92, 255, 0.1); }
+  .kiyas-ad { font-size: 13px; color: var(--soluk); font-weight: 600; }
+  .kiyas-tutar { font-size: 24px; font-weight: 800; margin: 4px 0; }
+  .kiyas-kart:not(.hece) .kiyas-tutar { color: var(--soluk); }
+  .kiyas-alt { font-size: 12px; color: var(--silik); }
+  .sonra { max-width: 520px; margin: 22px auto 0; }
+  .sonra h3 { font-size: 16px; margin: 0 0 12px; text-align: center; }
+  .sonra-adimlar { display: grid; gap: 8px; }
+  .sonra-adim { display: flex; gap: 12px; align-items: flex-start; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 12px; padding: 12px 14px; font-size: 14px; color: var(--soluk); }
+  .sonra-adim b { flex: 0 0 26px; height: 26px; border-radius: 8px; background: var(--mor-koyu); color: var(--mor-acik); display: flex; align-items: center; justify-content: center; font-size: 13px; }
+
+  /* sss */
+  .sss { max-width: 760px; margin: 0 auto; }
+  details { background: var(--zemin2); border: 1px solid var(--cizgi); border-radius: 14px; padding: 16px 20px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::after { content: "+"; color: var(--mor-acik); font-weight: 800; }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--soluk); margin: 10px 0 0; font-size: 15px; }
+
+  /* erken erişim penceresi */
+  .perde { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); display: none; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
+  .perde.acik { display: flex; }
+  .pencere { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 22px; padding: 28px; max-width: 440px; width: 100%; }
+  .pencere h3 { margin: 0 0 8px; font-size: 22px; }
+  .pencere p { color: var(--soluk); margin: 0 0 18px; font-size: 15px; }
+  .pencere .dugme { width: 100%; margin-top: 8px; }
+
+  footer { border-top: 1px solid var(--cizgi); padding: 34px 0 44px; color: var(--silik); font-size: 13px; }
+  footer .kap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+  footer img { height: 22px; opacity: 0.9; }
+  footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
+  footer a { text-decoration: none; color: var(--soluk); }
+
+  @media (max-width: 900px) {
+    .kahraman .kap { grid-template-columns: 1fr; }
+    .telefon { width: 260px; }
+    .adimlar, .ozellikler, .ikili { grid-template-columns: 1fr 1fr; }
+    .galeri { grid-template-columns: repeat(2, 1fr); }
+    .izle { grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 600px) {
+    .kahraman { padding-top: 40px; }
+    .adimlar, .ozellikler, .ikili { grid-template-columns: 1fr; }
+    section { padding: 56px 0; }
+    .alt-baslik { font-size: 16px; }
+    .tutar { font-size: 54px; }
+    .kiyas-tutar { font-size: 20px; }
+    .platform-dugmeler { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { .dalga i { animation: none; height: 30px; } }
+</style>
+</head>
+<body>
+
+<header class="ust">
+  <div class="kap">
+    <a href="#"><img src="varlik/logo.svg" alt="Hece" /></a>
+    <nav>
+      <a class="gizle" href="#nasil">Nasıl çalışır</a>
+      <a class="gizle" href="#stiller">Stiller</a>
+      <a class="gizle" href="#sss">SSS</a>
+      <a class="dugme ana kucuk satin-al" href="#fiyat">Satın al</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- kahraman -->
+  <div class="kahraman">
+    <div class="kap">
+      <div>
+        <span class="etiket">Premiere Pro eklentisi · Türkçe'ye özel</span>
+        <h1>Konuşmanı saniyeler içinde <em>viral altyazıya</em> çevir.</h1>
+        <p class="alt-baslik">Hece, Premiere'de seçtiğin klibi Türkçe yazıya döker, emin olamadığı kelimeleri işaretler ve 37 hazır stille altyazıyı videona yerleştirir. İnternet gerekmez, abonelik yok.</p>
+        <div class="cta-satir">
+          <a class="dugme ana satin-al" href="#fiyat">1.500 TL'ye al</a>
+          <a class="dugme ikincil" href="#nasil">▶ Tanıtımı izle</a>
+        </div>
+        <p class="fiyat-mini">Tek seferlik ödeme · <b>1.500 TL</b> lansman fiyatı · <s>2.800 TL</s> lansmandan sonra</p>
+        <div class="guven">
+          <span>Shopier ile güvenli ödeme</span>
+          <span>İndirme linki anında e-postana</span>
+          <span>Abonelik yok</span>
+        </div>
+      </div>
+      <div class="telefon-kap">
+        <div class="telefon" aria-label="Altyazı demosu">
+          <div class="ekran">
+            <div class="bokeh" style="width:90px;height:90px;left:8%;top:12%;background:#ffb86b"></div>
+            <div class="bokeh" style="width:60px;height:60px;right:10%;top:22%;background:#a593ff"></div>
+            <div class="bokeh" style="width:70px;height:70px;left:58%;top:6%;background:#ff7ab6"></div>
+            <div class="kisi"><div class="govde"></div><div class="bas"></div></div>
+            <div class="rec">0:12</div>
+            <div class="stil-adi" id="demoStil">Patron</div>
+            <div class="altyazi" id="demoAltyazi"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nasıl çalışır -->
+  <section id="nasil">
+    <div class="kap">
+      <div class="bolum-baslik">
+        <div class="ust-etiket">Nasıl çalışır</div>
+        <h2>Üç adımda <em>bitti.</em></h2>
+        <p>Premiere'den çıkmadan, panelin içinde. 41 saniyede izle.</p>
+      </div>
+      <div class="izle">
+      <div class="video-kap">
+        <video id="tanitimVideo" src="varlik/tanitim.mp4" poster="varlik/tanitim_kapak.jpg" preload="none" playsinline aria-label="Hece tanıtım videosu"></video>
+        <button class="oynat" id="tanitimOynat" type="button" aria-label="Tanıtım videosunu oynat"><span class="daire"></span><span class="yazi">Tanıtımı izle · 41 sn</span></button>
+      </div>
+      <div class="adimlar">
+        <div class="adim"><div class="no">1</div><h3>Transkripti çıkar</h3><p>Klibi seç, tek tıkla. 30 saniyelik konuşma ekran kartıyla yaklaşık 5 saniyede yazıya dökülür. İsimleri ve terimleri sözlüğe yazarsan doğru yazar.</p></div>
+        <div class="adim"><div class="no">2</div><h3>Kontrol et, stilini seç</h3><p>Emin olunamayan kelimeler sarıyla işaretli gelir; tıkla, düzelt. Sonra 37 stilden birini, platformu ve konumu seç.</p></div>
+        <div class="adim"><div class="no">3</div><h3>V2'ye ekle</h3><p>Altyazı şeffaf video olarak ikinci video izine yerleşir. İstersen ses efektleri ayrı ses izine, SRT dosyası da projene gelir.</p></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stiller -->
+  <section id="stiller" style="background: var(--zemin2)">
+    <div class="kap">
+      <div class="bolum-baslik">
+        <div class="ust-etiket">37 stil</div>
+        <h2>Viral, sinematik, <em>sanatsal.</em></h2>
+        <p>Konuşulan kelimeyle senkron; her stil kendi animasyonu ve ses efektiyle gelir.</p>
+      </div>
+      <div class="galeri">
+        <div class="g"><div class="ornek g-patron">DÜN <b>EKİMİMİZİ</b></div><span class="ad">Patron</span></div>
+        <div class="g"><div class="ornek g-sov">YAPTIK!</div><span class="ad">Şov</span></div>
+        <div class="g"><div class="ornek g-kapsul">Dün <b>ekimimizi</b></div><span class="ad">Kapsül</span></div>
+        <div class="g"><div class="ornek g-editor">Dün<i>ekimimizi</i></div><span class="ad">Editoryal</span></div>
+        <div class="g"><div class="ornek g-dergi"><i>sorunsuz bir</i><b>BİTİRDİK</b></div><span class="ad">Dergi</span></div>
+        <div class="g"><div class="ornek g-isik">Dün<b>ekimimizi</b></div><span class="ad">Işık</span></div>
+        <div class="g"><div class="ornek g-gradyan">DÜN EKİMİMİZİ</div><span class="ad">Gradyan</span></div>
+        <div class="g"><div class="ornek g-cember">Dün <b>ekimimizi</b></div><span class="ad">Çember</span></div>
+      </div>
+      <p class="galeri-not">+ Karaoke, Dağınık, Pop, Glitch, Daktilo, Neon, Kinetik, Köşeli, Modern ve dahası. Her stilin boyutu, rengi, gölgesi ve ışığı ayarlanabilir.</p>
+    </div>
+  </section>
+
+  <!-- özellikler -->
+  <section>
+    <div class="kap">
+      <div class="bolum-baslik">
+        <div class="ust-etiket">Fark yaratanlar</div>
+        <h2>Sadece altyazı değil, <em>izlettiren</em> altyazı.</h2>
+      </div>
+      <div class="ikili">
+        <div class="vitrin"><div class="sahne"><div class="manset">HERKESE<br /><b>MERHABA</b></div></div><h3>Kanca stilleri</h3><p>Videonun ilk cümlesi ya da ilk 2–5 saniyesi ayrı, dikkat çekici bir stille gelir: Manşet, Bomba, Altı çizili.</p></div>
+        <div class="vitrin"><div class="sahne"><div class="soru-kart">Bu işlem kaç seans sürüyor?</div></div><h3>Soru kartları</h3><p>Röportajda karşı tarafın soruları pencere ya da sohbet balonu içinde ayrı gelir. "?" ile biten cümleler kendiliğinden seçilir.</p></div>
+        <div class="vitrin"><div class="sahne"><div class="dalga"><i style="animation-delay:0s"></i><i style="animation-delay:.1s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.3s"></i><i style="animation-delay:.4s"></i><i style="animation-delay:.5s"></i><i style="animation-delay:.6s"></i></div></div><h3>Stile özel ses efektleri</h3><p>Pop, whoosh, daktilo, glitch... Kelimelerle senkron, kendiliğinden ayrı ses izine gelir; istemezsen tek tıkla kapat.</p></div>
+      </div>
+      <div class="ozellikler" style="margin-top: 16px">
+        <div class="oz"><div class="ikon">🇹🇷</div><h3>Türkçe için yapıldı</h3><p>ğ, ş, ı, İ sorunsuz. "Yüzde elli" %50, "bin beş yüz lira" 1.500 TL olur; satır "ve" ile bitmez, "mi" alt satıra düşmez.</p></div>
+        <div class="oz"><div class="ikon">🔒</div><h3>Bilgisayarında çalışır</h3><p>Ses bir sunucuya gönderilmez; internet olmadan da çalışır.</p></div>
+        <div class="oz"><div class="ikon">🎯</div><h3>Akıllı düzeltme</h3><p>Emin olunamayan kelimeler işaretli; Enter'a basınca sıradakine geçer.</p></div>
+        <div class="oz"><div class="ikon">📱</div><h3>Platform güvenli alanı</h3><p>Reels, TikTok, Shorts ya da 4:5 reklam seç; altyazı düğmelerin altında kalmaz.</p></div>
+        <div class="oz"><div class="ikon">🎚️</div><h3>İnce ayar</h3><p>Boyut, yazı ve vurgu rengi, gölge, ışık halesi, kontur.</p></div>
+        <div class="oz"><div class="ikon">⚡</div><h3>Hızlı</h3><p>4K altyazı videosu yaklaşık 10 saniyede hazır; ilerleme çubuğuyla.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- fiyat -->
+  <section id="fiyat" style="background: var(--zemin2)">
+    <div class="kap">
+      <div class="bolum-baslik">
+        <div class="ust-etiket">Fiyat</div>
+        <h2>Bir kere öde, <em>hep kullan.</em></h2>
+        <p>Abonelik yok, aylık ücret yok.</p>
+      </div>
+      <div class="kiyas">
+        <div class="kiyas-kart"><div class="kiyas-ad">Aylık altyazı aboneliği</div><div class="kiyas-tutar">~400 TL × 12</div><div class="kiyas-alt">yılda yaklaşık 4.800 TL, her yıl yeniden</div></div>
+        <div class="kiyas-kart hece"><div class="kiyas-ad">Hece</div><div class="kiyas-tutar">1.500 TL</div><div class="kiyas-alt">bir kere öde, Premiere'in içinde hep kullan</div></div>
+      </div>
+      <div class="fiyat-kutu">
+        <span class="rozet">Lansman fiyatı</span>
+        <div class="tutar">1.500<small>TL</small></div>
+        <p class="eski"><s>2.800 TL</s> · lansmandan sonraki fiyat</p>
+        <p class="tek">Tek seferlik ödeme</p>
+        <ul class="liste">
+          <li>37 altyazı stili, kanca stilleri ve soru kartları</li>
+          <li>Stile özel ses efektleri</li>
+          <li>Türkçe transkript, sözlük ve akıllı düzeltme</li>
+          <li>Platform güvenli alanı ve ince ayar</li>
+          <li>1.x sürüm güncellemeleri dahil</li>
+        </ul>
+        <div class="platform-dugmeler">
+          <a class="dugme ana satin-al" data-platform="windows" href="#">Windows için al</a>
+          <a class="dugme ana satin-al" data-platform="mac" href="#">Mac için al</a>
+        </div>
+        <p class="odeme-not">🔒 Ödeme Shopier üzerinden alınır; kart bilgilerin bize gelmez.</p>
+        <p class="kucuk-not">Gereksinim: Premiere Pro 2026 (26.0 ve üstü) · Windows 10/11 (NVIDIA ekran kartı önerilir) ya da macOS 13 ve üstü (Apple Silicon ya da Intel) · kurulum için internet ve yaklaşık 3 GB boş alan. Ekran kartı yoksa yazıya dökme işlemcide daha yavaş çalışır.</p>
+      </div>
+      <div class="sonra">
+        <h3>Satın aldıktan sonra</h3>
+        <div class="sonra-adimlar">
+          <div class="sonra-adim"><b>1</b><span>Shopier'de ödemeyi tamamla.</span></div>
+          <div class="sonra-adim"><b>2</b><span>İndirme linki aynı dakika e-postana gelir (gelmezse gereksiz klasörüne bak).</span></div>
+          <div class="sonra-adim"><b>3</b><span>Kurulumu çalıştır (Windows: HECE_KUR.cmd'ye çift tıkla · Mac: Terminal'de "bash " yazıp HECE_KUR.command'ı sürükle), sipariş numaranı gir. Premiere'de Pencere › UXP Plugins › Hece.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sss -->
+  <section id="sss">
+    <div class="kap">
+      <div class="bolum-baslik"><div class="ust-etiket">SSS</div><h2>Merak edilenler</h2></div>
+      <div class="sss">
+        <details><summary>Premiere'in kendi altyazısından farkı ne?</summary><p>Premiere'in otomatik transkripti Türkçe'yi desteklemiyor. Hece Türkçe konuşmayı kelime kelime zamanlıyor ve Premiere'de olmayan hareketli, viral stilleri hazır getiriyor.</p></details>
+        <details><summary>Ödeme nasıl yapılıyor?</summary><p>Satın al düğmesi seni Shopier'deki ürün sayfasına götürür; kredi ya da banka kartıyla ödersin. Kart bilgilerin Shopier ve ödeme kuruluşunda işlenir, bize gelmez. Tek seferlik ödemedir, aboneliğe dönüşmez.</p></details>
+        <details><summary>Ürün nasıl teslim ediliyor?</summary><p>Ödeme onaylanınca indirme linki siparişte yazdığın e-postaya hemen gelir. İçinde tek bir kurulum dosyası ve adım adım rehber var. E-posta gelmezse önce gereksiz klasörüne bak, yoksa sipariş numaranla bize yaz.</p></details>
+        <details><summary>İade var mı?</summary><p>Hece anında teslim edilen dijital bir ürün olduğu için yasa gereği cayma hakkı yoktur; almadan önce gereksinimleri kontrol et. Kurulumda sorun yaşarsan sorunu birlikte çözeriz; ürün çalışmıyorsa yasal haklarının hepsi saklıdır. Ayrıntılar: <a href="yasal/iade.html">İade koşulları</a>.</p></details>
+        <details><summary>İnternet bağlantısı gerekiyor mu?</summary><p>Transkript ve altyazı tamamen bilgisayarında üretilir; sesin hiçbir sunucuya gönderilmez. İnternet sadece kurulumda ve güncelleme indirirken gerekir.</p></details>
+        <details><summary>Mac'te çalışıyor mu?</summary><p>Evet. macOS 13 ve üstünde, Apple Silicon (M1–M4) ve Intel Mac'lerde çalışır. Windows ve Mac ayrı paketlerdir; satın alırken bilgisayarına uygun olanı seç. Yanlış sürümü aldıysan sipariş numaranla yaz, değiştiririz.</p></details>
+        <details><summary>Ekran kartım yoksa ne olur?</summary><p>Hece işlemcide de çalışır, sadece transkript daha uzun sürer. NVIDIA ekran kartlı Windows'ta ve Apple Silicon Mac'lerde ekran kartı kullanılır; 30 saniyelik konuşma NVIDIA kartla yaklaşık 5 saniyede çıkar.</p></details>
+        <details><summary>Altyazıyı sonradan düzenleyebilir miyim?</summary><p>Kelimeleri panelde düzeltip altyazıyı yeniden üretebilirsin. Ayrıca SRT olarak alıp Premiere'in altyazı izine de çevirebilirsin.</p></details>
+        <details><summary>Kaç bilgisayarda kullanabilirim?</summary><p>Bir satın alma bir kişi içindir; kendi bilgisayarlarına kurabilirsin. Ekibinde birden fazla kurgucu varsa her biri için ayrı satın alma gerekir.</p></details>
+        <details><summary>Güncellemeler ücretli mi?</summary><p>1.x sürümlerindeki bütün güncellemeler (yeni stiller, düzeltmeler) ücretsizdir; yeni sürüm çıkınca panelde haber verilir.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="kap">
+    <img src="varlik/logo.svg" alt="Hece" />
+    <nav>
+      <a href="yasal/mesafeli-satis.html">Mesafeli satış sözleşmesi</a>
+      <a href="yasal/kvkk.html">KVKK</a>
+      <a href="yasal/iade.html">İade koşulları</a>
+      <a href="https://www.shopier.com/reelsklon" id="magazaLink" target="_blank" rel="noopener">Shopier mağazası</a>
+      <a href="#" id="iletisimLink" hidden>İletişim</a>
+    </nav>
+    <span>© 2026 Hece</span>
+  </div>
+</footer>
+
+<!-- Shopier ürün linki girilene kadar: satış açılış penceresi (SATIN_AL_LINKI doluysa hiç açılmaz) -->
+<div class="perde" id="perde" role="dialog" aria-modal="true" aria-labelledby="perdeBaslik">
+  <div class="pencere">
+    <h3 id="perdeBaslik">Satış çok yakında 🎉</h3>
+    <p>Shopier ürün sayfası birkaç gün içinde açılıyor. Bize yaz, açıldığı gün 1.500 TL lansman fiyatıyla ilk sen al.</p>
+    <a class="dugme ana" id="erkenErisim" href="#">Açılınca haber ver</a>
+    <button class="dugme ikincil" id="perdeKapat" type="button">Kapat</button>
+  </div>
+</div>
+
+<script>
+  // Shopier ürün linkleri (mağaza reelsklon; Windows ve Mac ayrı ürün, ürün açılınca: https://www.shopier.com/reelsklon/<ürün no>).
+  // Boşken o platformun düğmesi "Satış çok yakında" penceresini açar; doluysa doğrudan Shopier'e gider.
+  const SATIN_AL_LINKI = { windows: "", mac: "" };
+  // Destek e-postası: müşteri yazışmaları volbet124'ten (ReelsKlon ile aynı). hecealtyazi.com e-posta yönlendirmesi kurulunca değiştirilebilir.
+  const ILETISIM_EPOSTA = "volbet124@gmail.com";
+
+  if (ILETISIM_EPOSTA) {
+    document.getElementById("erkenErisim").href = `mailto:${ILETISIM_EPOSTA}?subject=${encodeURIComponent("Hece satışa açılınca haber ver")}&body=${encodeURIComponent("Merhaba, Hece satışa açılınca haber verin.")}`;
+    const il = document.getElementById("iletisimLink"); il.href = `mailto:${ILETISIM_EPOSTA}`; il.hidden = false;
+  } else {
+    const b = document.getElementById("erkenErisim"); b.textContent = "Erken erişim listesi çok yakında"; b.style.opacity = "0.5"; b.style.pointerEvents = "none";
+  }
+  // hero ve menüdeki "al" düğmeleri önce fiyat bölümüne kaydırır; fiyat kutusundaki Windows / Mac düğmeleri Shopier'e gider
+  document.querySelectorAll(".satin-al").forEach((a) => {
+    if (!a.closest(".fiyat-kutu")) return;
+    const link = SATIN_AL_LINKI[a.dataset.platform];
+    if (link) { a.href = link; a.target = "_blank"; a.rel = "noopener"; return; }
+    a.addEventListener("click", (e) => { e.preventDefault(); document.getElementById("perde").classList.add("acik"); });
+  });
+  document.getElementById("perdeKapat").onclick = () => document.getElementById("perde").classList.remove("acik");
+  document.getElementById("perde").addEventListener("click", (e) => { if (e.target.id === "perde") e.currentTarget.classList.remove("acik"); });
+
+  // Tanıtım videosu: kapak + oynat düğmesi; tıklayınca sesli oynar (preload yok, sayfa hızlı açılır)
+  const tanitim = document.getElementById("tanitimVideo"), oynat = document.getElementById("tanitimOynat");
+  oynat.onclick = () => { oynat.hidden = true; tanitim.controls = true; tanitim.play(); };
+  tanitim.addEventListener("ended", () => { tanitim.controls = false; tanitim.currentTime = 0; oynat.hidden = false; });
+
+  // Telefon demosu: aynı cümle üç stilde, kelimeler konuşma ritminde
+  const cumle = ["Ekimden", "sonra", "ilk", "yıkama", "böyle", "yapılır"];
+  const stiller = [
+    { ad: "Patron", sinif: "s-patron", grup: 3 },
+    { ad: "Kapsül", sinif: "s-kapsul", grup: 3 },
+    { ad: "Editoryal", sinif: "s-editor", grup: 3 },
+  ];
+  const kutu = document.getElementById("demoAltyazi"), etiket = document.getElementById("demoStil");
+  const azalt = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let si = 0, wi = 0;
+  function ciz() {
+    const st = stiller[si];
+    etiket.textContent = st.ad;
+    kutu.className = "altyazi " + st.sinif;
+    const bas = Math.floor(wi / st.grup) * st.grup;
+    const grup = cumle.slice(bas, bas + st.grup);
+    const aktif = wi - bas;
+    if (st.sinif === "s-editor") {
+      const uzun = grup.reduce((a, b) => (b.length > a.length ? b : a));
+      kutu.innerHTML = grup.filter((w) => w !== uzun).map((w, i) => `<span class="k ${grup.indexOf(w) <= aktif ? "gorundu" : ""}">${w}</span>`).join(" ")
+        + `<span class="k anahtar ${grup.indexOf(uzun) <= aktif ? "gorundu" : ""}">${uzun}</span>`;
+    } else {
+      kutu.innerHTML = grup.map((w, i) => `<span class="k ${i === aktif ? "aktif" : ""}">${w}</span>`).join(" ");
+    }
+  }
+  function ilerle() {
+    wi++;
+    if (wi >= cumle.length) { wi = 0; si = (si + 1) % stiller.length; }
+    ciz();
+  }
+  ciz();
+  if (!azalt) setInterval(ilerle, 520);
+</script>
+</body>
+</html>

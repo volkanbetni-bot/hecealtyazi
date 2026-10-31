@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /yasal/
+
+Sitemap: https://hecealtyazi.com/sitemap.xml
