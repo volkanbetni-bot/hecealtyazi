@@ -241,7 +241,7 @@ fbq('init', '1694574145331543');
 fbq('init', '1126060790019893');
 fbq('track', 'PageView');
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="shopier.com/hecealtyazi"]');if(!a)return;fbq('trackCustom','ShopierTikla',{content_name:'Hece',content_ids:['52422408'],value:1500,currency:'TRY'});});
-document.addEventListener('DOMContentLoaded',function(){var f=document.getElementById('fiyat');if(!f||!('IntersectionObserver' in window))return;var o=new IntersectionObserver(function(x){if(x[0].isIntersecting){fbq('track','ViewContent',{content_name:'Hece',content_ids:['52422408'],content_type:'product',value:1500,currency:'TRY'});o.disconnect();}},{threshold:0.4});o.observe(f);});
+document.addEventListener('DOMContentLoaded',function(){var f=document.getElementById('fiyat');if(!f||!('IntersectionObserver' in window))return;var o=new IntersectionObserver(function(x){if(x[0].isIntersecting){fbq('track','ViewContent',{content_name:'Hece',content_ids:['52422408'],content_type:'product',value:1500,currency:'TRY'});o.disconnect();}},{threshold:0,rootMargin:'0px 0px -30% 0px'});o.observe(f);});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1694574145331543&ev=PageView&noscript=1"
