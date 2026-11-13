@@ -240,8 +240,8 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1694574145331543');
 fbq('init', '1126060790019893');
 fbq('track', 'PageView');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="shopier.com/hecealtyazi"]');if(!a)return;fbq('trackCustom','ShopierTikla',{content_name:'Hece',content_ids:['52422408'],value:1500,currency:'TRY'});});
-document.addEventListener('DOMContentLoaded',function(){var f=document.getElementById('fiyat');if(!f||!('IntersectionObserver' in window))return;var o=new IntersectionObserver(function(x){if(x[0].isIntersecting){fbq('track','ViewContent',{content_name:'Hece',content_ids:['52422408'],content_type:'product',value:1500,currency:'TRY'});o.disconnect();}},{threshold:0,rootMargin:'0px 0px -30% 0px'});o.observe(f);});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="shopier.com/hecealtyazi"]');if(!a)return;fbq('trackCustom','ShopierTikla',{content_name:'Hece',content_ids:['52422408'],value:window.HECE_FIYAT||1500,currency:'TRY'});});
+document.addEventListener('DOMContentLoaded',function(){var f=document.getElementById('fiyat');if(!f||!('IntersectionObserver' in window))return;var o=new IntersectionObserver(function(x){if(x[0].isIntersecting){fbq('track','ViewContent',{content_name:'Hece',content_ids:['52422408'],content_type:'product',value:window.HECE_FIYAT||1500,currency:'TRY'});o.disconnect();}},{threshold:0,rootMargin:'0px 0px -30% 0px'});o.observe(f);});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1694574145331543&ev=PageView&noscript=1"
@@ -249,8 +249,25 @@ src="https://www.facebook.com/tr?id=1694574145331543&ev=PageView&noscript=1"
 src="https://www.facebook.com/tr?id=1126060790019893&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script>
+// Kasım indirimi: 800 TL (son 30 günün en düşük fiyatı 1.500 TL), 30 Kasım 2026 23:59 (TR) bitiyor; sonra site kendiliğinden 1.500 TL'ye döner.
+window.HECE_KAMPANYA_BITIS=Date.parse('2026-11-30T23:59:59+03:00');
+window.HECE_FIYAT=Date.now()>window.HECE_KAMPANYA_BITIS?1500:800;
+if(window.HECE_FIYAT===1500)document.documentElement.classList.add('kampanya-bitti');
+</script>
+<style>
+  .k-off{display:none}
+  html.kampanya-bitti .k-on{display:none}
+  html.kampanya-bitti .k-off{display:inline}
+  html.kampanya-bitti .kampanya-serit{display:none}
+  .kampanya-serit{background:var(--sari);color:#111;text-align:center;font-size:14px;font-weight:700;padding:9px 16px;line-height:1.35}
+  .kampanya-serit a{color:#111;text-decoration:underline}
+  .rozet.kasim{background:var(--sari);color:#111}
+  .sayac{display:block;color:var(--sari);font-weight:700;font-size:14px;margin-top:8px}
+</style>
 </head>
 <body>
+<div class="kampanya-serit">Kasım indirimi: Hece <b>800 TL</b> <s>1.500 TL</s> · 30 Kasım 23:59'a kadar · <a href="#fiyat">Hemen al</a></div>
 
 <header class="ust">
   <div class="kap">
@@ -274,10 +291,10 @@ src="https://www.facebook.com/tr?id=1126060790019893&ev=PageView&noscript=1"
         <h1>Konuşmanı saniyeler içinde <em>viral altyazıya</em> çevir.</h1>
         <p class="alt-baslik">Hece, Premiere'de seçtiğin klibi Türkçe yazıya döker, emin olamadığı kelimeleri işaretler ve 43 hazır stille altyazıyı videona yerleştirir. Üstüne grafik kartları, otomatik zoom, kapak seçici ve toplu üretim. İnternet gerekmez, abonelik yok.</p>
         <div class="cta-satir">
-          <a class="dugme ana satin-al" href="#fiyat">1.500 TL'ye al</a>
+          <a class="dugme ana satin-al" href="#fiyat"><span class="k-on">800 TL'ye al</span><span class="k-off">1.500 TL'ye al</span></a>
           <a class="dugme ikincil" href="#nasil">▶ Tanıtımı izle</a>
         </div>
-        <p class="fiyat-mini">Tek seferlik ödeme · <b>1.500 TL</b> lansman fiyatı · <s>2.800 TL</s> lansmandan sonra</p>
+        <p class="fiyat-mini"><span class="k-on">Kasım indirimi · <b>800 TL</b> <s>1.500 TL</s> · tek seferlik ödeme · 30 Kasım 23:59'a kadar</span><span class="k-off">Tek seferlik ödeme · <b>1.500 TL</b> lansman fiyatı · <s>2.800 TL</s> lansmandan sonra</span></p>
         <div class="guven">
           <span>Shopier ile güvenli ödeme</span>
           <span>İndirme linki anında e-postana</span>
@@ -435,13 +452,13 @@ src="https://www.facebook.com/tr?id=1126060790019893&ev=PageView&noscript=1"
       </div>
       <div class="kiyas">
         <div class="kiyas-kart"><div class="kiyas-ad">Altyazı abonelikleri</div><div class="kiyas-tutar">15–19 $ / ay</div><div class="kiyas-alt">yılda 180–228 $ (≈ 9.000–11.400 TL), her yıl yeniden</div></div>
-        <div class="kiyas-kart hece"><div class="kiyas-ad">Hece</div><div class="kiyas-tutar">1.500 TL</div><div class="kiyas-alt">bir kere öde, Premiere'in içinde hep kullan</div></div>
+        <div class="kiyas-kart hece"><div class="kiyas-ad">Hece</div><div class="kiyas-tutar"><span class="k-on">800 TL</span><span class="k-off">1.500 TL</span></div><div class="kiyas-alt">bir kere öde, Premiere'in içinde hep kullan</div></div>
       </div>
       <p class="kiyas-not">Yaygın altyazı uygulamalarının aylık planları; TL karşılığı 31 Ekim 2026 kuruyla (1 $ ≈ 50 TL).</p>
       <div class="fiyat-kutu">
-        <span class="rozet">Lansman fiyatı</span>
-        <div class="tutar">1.500<small>TL</small></div>
-        <p class="eski"><s>2.800 TL</s> · lansmandan sonraki fiyat</p>
+        <span class="rozet kasim k-on">Kasım indirimi</span><span class="rozet k-off">Lansman fiyatı</span>
+        <div class="tutar"><span class="k-on">800</span><span class="k-off">1.500</span><small>TL</small></div>
+        <p class="eski"><span class="k-on"><s>1.500 TL</s> yerine · 30 Kasım 23:59'a kadar</span><span class="k-off"><s>2.800 TL</s> · lansmandan sonraki fiyat</span><span class="sayac k-on" id="sayac"></span></p>
         <p class="tek">Tek seferlik ödeme · ömür boyu lisans</p>
         <ul class="liste">
           <li>43 altyazı stili, kanca stilleri ve soru kartları</li>
@@ -453,7 +470,7 @@ src="https://www.facebook.com/tr?id=1126060790019893&ev=PageView&noscript=1"
           <li>Windows ve Mac sürümü aynı pakette</li>
           <li>1.x sürüm güncellemeleri dahil</li>
         </ul>
-        <a class="dugme ana satin-al" href="#">Satın al · 1.500 TL</a>
+        <a class="dugme ana satin-al" href="#"><span class="k-on">Satın al · 800 TL</span><span class="k-off">Satın al · 1.500 TL</span></a>
         <p class="odeme-not">🔒 Ödeme Shopier üzerinden alınır; kart bilgilerin bize gelmez.</p>
         <p class="kucuk-not">Gereksinim: Premiere Pro 2026 (26.0 ve üstü) · Windows 10/11 (NVIDIA ekran kartı önerilir) ya da macOS 13 ve üstü (Apple Silicon ya da Intel) · kurulum için internet ve yaklaşık 3 GB boş alan. Ekran kartı yoksa yazıya dökme işlemcide daha yavaş çalışır.</p>
       </div>
@@ -506,15 +523,22 @@ src="https://www.facebook.com/tr?id=1126060790019893&ev=PageView&noscript=1"
 <div class="perde" id="perde" role="dialog" aria-modal="true" aria-labelledby="perdeBaslik">
   <div class="pencere">
     <h3 id="perdeBaslik">Satış çok yakında 🎉</h3>
-    <p>Shopier ürün sayfası birkaç gün içinde açılıyor. Bize yaz, açıldığı gün 1.500 TL lansman fiyatıyla ilk sen al.</p>
+    <p>Shopier ürün sayfası birkaç gün içinde açılıyor. Bize yaz, açıldığı gün ilk sen al.</p>
     <a class="dugme ana" id="erkenErisim" href="#">Açılınca haber ver</a>
     <button class="dugme ikincil" id="perdeKapat" type="button">Kapat</button>
   </div>
 </div>
 
 <script>
-  // Shopier ürün linki (Shopier hesabı RoseHoox, mağaza adı hecealtyazi; TEK ürün 52422408, zip içinde Windows + Mac; 2.800 → 1.500 TL indirimli).
+  // Shopier ürün linki (Shopier hesabı RoseHoox, mağaza adı hecealtyazi; TEK ürün 52422408, zip içinde Windows + Mac; Kasım indirimi: 1.500 → 800 TL, 30 Kasım 23:59'a kadar; sonra Shopier 1.500'e geri alınmalı).
   // Boşken "Satın al" düğmesi "Satış çok yakında" penceresini açar; doluysa doğrudan Shopier'e gider.
+  (function () {
+    const el = document.getElementById("sayac"); if (!el || window.HECE_FIYAT !== 800) return;
+    const yaz = () => { const k = window.HECE_KAMPANYA_BITIS - Date.now(); if (k <= 0) { location.reload(); return; }
+      const g = Math.floor(k / 864e5), sa = Math.floor(k / 36e5) % 24, dk = Math.floor(k / 6e4) % 60;
+      el.textContent = "İndirimin bitmesine " + (g ? g + " gün " : "") + sa + " saat " + dk + " dakika"; };
+    yaz(); setInterval(yaz, 30000);
+  })();
   const SATIN_AL_LINKI = "https://www.shopier.com/hecealtyazi/52422408";
   // Destek e-postası: müşteri yazışmaları volbet124'ten (ReelsKlon ile aynı). hecealtyazi.com e-posta yönlendirmesi kurulunca değiştirilebilir.
   const ILETISIM_EPOSTA = "volbet124@gmail.com";
